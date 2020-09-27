@@ -54,7 +54,7 @@ section.sidebar-ov(class=`${isShowToc ? 'hide' : ''}`)
                 i(class=socialIcon)
             if !theme.social_setting.icon_only
               span.sidebar-ov-social-item__text= name
-
+  include ck_sidebar.pug
   if theme.feed.enable
     div.sidebar-ov-feed
       if theme.feed.email

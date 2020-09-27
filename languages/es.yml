@@ -26,10 +26,10 @@ page:
 
 # Sidebar
 sidebar:
-  overview: Reseña
-  catalog: Catálogo
+  overview: Social
+  catalog: Contenido
   subscribe: Suscríbete
-  archives: Archivos
+  archives: Archivo
   categories: Categorías
   tags: Etiquetas
   read_info: Has leído

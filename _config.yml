@@ -11,7 +11,7 @@ shake_file: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml`.
-index_subtitle: false
+index_subtitle: true
 
 # Set a canonical link tag for your Hexo site.
 # See: https://support.google.com/webmasters/answer/139066
@@ -22,11 +22,11 @@ canonical: true
 # ---------------------------------------------------------------
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification:
+google_site_verification: 
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-bing_site_verification:
+bing_site_verification: 99D3E07F7A7D55D268F4928847F8152C
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
@@ -74,9 +74,9 @@ menu_settings:
 # Site config
 # ---------------------------------------------------------------
 
-favicon:
-  small: /images/icons/favicon-16x16.png
-  medium: /images/icons/favicon-32x32.png
+favicon: 
+  small: /images/icons/favicon.ico
+  medium: /images/icons/favicon.ico
   # ! --------------------------------------------------
   # ! If you don't know the following, please ignore it.
   # ! --------------------------------------------------
@@ -100,7 +100,7 @@ night_mode:
     # Color of button (Please use "" to wrap the value).
     color: "#fafafa"
     # Background color of button (Please use "" to wrap the value).
-    bg_color: "#8c8a8a"
+    bg_color: "#cc700a"
   # The icon that stand for day and night.
   icon:
     dark: 🌜
@@ -135,24 +135,24 @@ header:
     # Whether to show on the article page.
     post: true
   # If you set a percentage, it will be calculated based on the height of screen (Supports all CSS units)
-  height: 80%
+  height: 46%
   # Background image of site header.
   bg_image:
-    enable: false
+    enable: true
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url:
+    url: /images/home-bg.png
   # Mask effect of the background image.
   mask:
     enable: false
     # Opacity of the mask (value: 0 ~ 1)
-    opacity: 0.5
+    opacity: 0
   nav:
     # Height of the navigation bar (Supports all CSS units)
     height: 50px
     # Background color of the navigation bar (Please use "" to wrap the value).
-    bg_color: "#333"
+    bg_color: "#f5901d"
   # The icon that prompts the user to pull down.
   scroll_down_icon:
     enable: false
@@ -208,7 +208,7 @@ footer:
     end:
   # The icon between the copyright and the owner.
   icon:
-    enable: true
+    enable: false
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     name: fas fa-heart
     # Heartbeat animation.
@@ -217,12 +217,12 @@ footer:
     color: "#ff0000"
   # Hexo link
   powered:
-    enable: true
+    enable: false
     # Whether to show version after Hexo link (e.g. vX.X.X)
     version: true
   # Theme link
   theme:
-    enable: true
+    enable: false
     # Whether to show version after theme link (e.g. vX.X.X)
     version: true
   # Beian information for Chinese users, see: http://www.miitbeian.gov.cn/
@@ -237,7 +237,7 @@ footer:
 
 # Creative Commons 4.0 International License
 creative_commons:
-  enable: true
+  enable: false
   # Optional values: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
   # For details, please see: https://creativecommons.org/share-your-work/licensing-types-examples/
   license: BY-NC-SA
@@ -261,9 +261,9 @@ back2top:
     # Rotation Angle of icon.
     rotate: -45deg
     # (Please use "" to wrap the value)
-    color: "#49b1f5"
+    color: "#29e67b"
     # Color when the mouse hovers it (Please use "" to wrap the value)
-    hover_color: "#fc6423"
+    hover_color: "#17ba5f"
 
 # ---------------------------------------------------------------
 # Sidebar config
@@ -277,10 +277,13 @@ sidebar:
   # The distance from the top of the page when the sidebar is fixed (Only `px` unit is supported)
   offsetTop: 20px
   # Whether to show horizon line.
-  horizon_line: false
+  horizon_line: true
+
+subscription-form:
+  enable: true
 
 author:
-  enable: true
+  enable: false
   # Avatar in the site sidebar.
   avatar:
     # In theme directory (source/images): /images/avatar.png
@@ -288,7 +291,7 @@ author:
     # You can also use a link of image.
     url: /images/icons/stun-logo.svg
     # If true, the avatar would be displayed in a circle.
-    rounded: false
+    rounded: true
     # Opacity of avatar (value: 0 ~ 1)
     opacity: 1
     # Mouse hover animation
@@ -304,8 +307,10 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/ || fab fa-github
-  google: https://plus.google.com/ || fab fa-google
+  # github: https://github.com/ || fab fa-github
+  # google: https://plus.google.com/ || fab fa-google
+  facebook: http://facebook.com/ || fab fa-facebook
+  pinterest: https://www.pinterest.com || fab fa-pinterest
   twitter: https://twitter.com/ || fab fa-twitter
   youtube: https://youtube.com/ || fab fa-youtube
   # segmentfault: https://segmentfault.com/ || origin:sf
@@ -316,7 +321,7 @@ social:
   # qq: yournumber || fab fa-qq
 
 social_setting:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: true
 
@@ -350,7 +355,7 @@ feed:
 reading_progress:
   enable: true
   # (Please use "" to wrap the value)
-  color: "#fc6423"
+  color: "#29e67b"
   height: 1px
 
 # ---------------------------------------------------------------
@@ -387,7 +392,7 @@ post_meta:
   icon_only: false
   # The create time of post.
   created:
-    enable: true
+    enable: false
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-calendar-plus
   # The update time of post.
@@ -614,7 +619,11 @@ algolia_search:
 # Local Search
 # See: https://github.com/wzpan/hexo-generator-search/
 local_search:
-  enable: false
+  enable: true
+search:
+  path: search.xml
+  field: all
+  content: true
 
 # ---------------------------------------------------------------
 # Background config
@@ -627,19 +636,19 @@ canvas_ribbon:
   # The width of the ribbon.
   size: 120
   # The transparency of the ribbon.
-  alpha: 0.6
+  alpha: 0.8
   # The display level of the ribbon.
   zIndex: -1
 
 # Canvas-nest
 # Dependency: https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   # Color of lines.
   # RGB values, use `,` to separate.
-  color: "0,0,0"
+  color: "41,230,123"
   # The opacity of lines (value: 0 ~ 1)
-  opacity: 0.6
+  opacity: 0.8
   # The number of lines.
   count: 99
   # `z-index` property of the background.
@@ -652,7 +661,7 @@ math:
   enable: false
   # If true, this function will be enabled on every page.
   # If false, this function will be enabled only if the page where `math: true` is set in `Front-matter`.
-  per_page: false
+  per_page: true
   # ! -------------------------------------------------------------------------------
   # ! Please see the documentation before using. See:
   # ! https://liuyib.github.io/hexo-theme-stun/zh-CN/advanced/third-part.html#mathjax
@@ -710,7 +719,7 @@ lazyload:
 # Quicklink support
 # See: https://github.com/GoogleChromeLabs/quicklink/
 quicklink:
-  enable: false
+  enable: true
   # Quicklink (quicklink.umd.js script) is loaded on demand.
   # Add `quicklink: true` in Front-matter of the page or post you need.
   # Home page and archive page can be controlled through home and archive options below.
@@ -737,9 +746,9 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: false
+  enable: true
   # When switching pages, scroll to the bottom of the top image.
-  avoid_banner: false
+  avoid_banner: true
   # ! --------------------------------------------------
   # ! If you don't know the following, please ignore it.
   # ! --------------------------------------------------
@@ -771,7 +780,7 @@ external_link:
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     name: fas fa-external-link-alt
     # (Please use "" to wrap the value)
-    color: "#aaa"
+    color: "#DE1060"
 
 # The shortcuts of the site.
 shortcuts:
@@ -779,7 +788,7 @@ shortcuts:
   # `Ctrl + ←` is the shortcuts to prev post.
   # `Ctrl + →` is the shortcuts to next post.
   switch_post:
-    enable: false
+    enable: true
 
 # Tag cloud
 # If not used, comment it or ignore it.

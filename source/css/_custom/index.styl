@@ -1,3 +1,108 @@
 // Custom styles by yourself.
 // You should always modify the style here, not in the source code.
 // Otherwise, when the theme is updated, the code you modified will be overwritten.
+
+.seva-form.formkit-form{
+    text-align: center;
+}
+
+.formkit-submit{
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 144, 29);
+    border-radius: 4px;
+    border: none;
+}
+
+.formkit-field{
+    margin: 0 0 5px 0;
+    box-sizing: border-box;
+}
+
+.formkit-input{
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.formkit-submit:hover{
+    color:#f5f6f7;
+    background-color: #f5af5c;
+}
+
+.formkit-submit > span {
+    display: block;
+    padding: 0.2em 0.6em;
+    font-size: 0.9em;
+}
+
+.formkit-powered-by-convertkit-container{
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 5;
+}
+
+.formkit-powered-by-convertkit{
+    color: #cecece;
+    padding: 0;
+    height: 20px;
+    font-size: 10px;
+}
+
+//@media screen and (min-width: )
+.header-banner-info__title {
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent:-99999em;
+    overflow:hidden;
+    margin-bottom: 0;
+    } 
+// $md-width: 992px - 0.02px
+// -----------------------------------------
+@media (min-width: $md-width) {
+.header-inner{
+    height: 550px;
+    }
+.header-banner-info__title {
+    background-image:url("/images/logo-texto-blanco-400p.png");
+    line-height: 5;
+    }
+}
+
+// $md-width: 992px - 0.02px
+// -----------------------------------------
+@media (max-width: $md-width) {
+.header-inner{
+    height: 430px;
+    }
+.header-banner-info__title {
+    background-image:url("/images/logo-texto-blanco-300p.png");
+    line-height: 4;
+    }
+}
+
+// sm-width: 768px - 0.02px
+// -----------------------------------------
+@media (max-width: $sm-width) {
+.header-inner{
+    height: 300px;
+    }
+.header-banner-info__title {
+    background-image:url("/images/logo-texto-blanco-200p.png");
+    line-height: 3.5;
+    }
+}
+
+// xs-width: 576px - 0.02px
+// -----------------------------------------
+@media (max-width: $xs-width) {
+.header-inner{
+    height: 200px;
+    }
+.header-banner-info__title {
+    background-image:url("/images/logo-texto-blanco-100p.png");
+    line-height: 3;
+    }
+}

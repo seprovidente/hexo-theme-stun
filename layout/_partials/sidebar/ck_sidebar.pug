@@ -1,0 +1,20 @@
+script(src="https://f.convertkit.com/ckjs/ck.5.js")
+form.seva-form.formkit-form(action="https://app.convertkit.com/forms/1698147/subscriptions" data-format="inline" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" data-sv-form="1698147" data-uid="cd823b057c" data-version="5" method="post" min-width="400 500 600 700 800")
+    div.formkit-header(data-element="header")
+        h4 Entérate de todas nuestras novedades
+    div.formkit-subheader(data-element="subheader")
+        p
+    ul.formkit-alert.formkit-alert-error(data-element="errors" data-group="alert")
+    div.seva-fields.formkit-fields(data-element="fields" data-stacked="true")
+        div.formkit-field
+            input.formkit-input(aria-label="Nombre" data-ms-editor="true" name="fields[first_name]" placeholder="Nombre" spellcheck="false")
+        div.formkit-field
+            input.formkit-input(aria-label="Correo electrónico" name="email_address" placeholder="Correo electrónico" required="" type="email")
+        button.formkit-submit(data-element="submit")
+            div.formkit-spinner
+            span Quiero enterarme
+        div.formkit-powered-by-convertkit-container
+            a.formkit-powered-by-convertkit(data-element="powered-by"
+                data-variant="dark" href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"
+                rel="noopener noreferrer" target="_blank")
+                span Hecho con ConvertKit
