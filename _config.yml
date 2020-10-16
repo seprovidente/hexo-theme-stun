@@ -565,6 +565,19 @@ utterances:
   # ! -------------------------------------------------------------------------------
   script_url: https://utteranc.es/client.js
 
+# Facebook Comments
+# Addin dependency: https://github.com/RichardJECooke/hexo-fbcomments
+# install addin with this command before using:
+# run npm install hexo-fbcomments --save
+fbcomments:
+  enable: true
+  appID: 365137518000611
+  colorscheme: light # (optional) light/dark
+  enabled: true # (optional) true/false
+  lang: es_ES # (optional)
+  order_by: time  # (optional) time/reverse_time/social
+  numPosts: 10 # (optional) defaults to 5
+
 # ---------------------------------------------------------------
 # Statistics and Analytics config
 # ---------------------------------------------------------------
